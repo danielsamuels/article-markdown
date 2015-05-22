@@ -40,6 +40,13 @@ def main():
 
     # We most likely have the article container stored as biggest_parent[1], so
     # turn it into Markdown.
+
+    print "---"
+    print u"title: {}".format(soup.title.string).encode('utf-8').strip()
+    print u"canonical: {}".format(url).encode('utf-8').strip()
+    print "---"
+    print
+
     print html2text.html2text(unicode(biggest_parent[1])).encode('utf-8')
 
 if __name__ == '__main__':
