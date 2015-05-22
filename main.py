@@ -40,7 +40,7 @@ def main():
 
     # We most likely have the article container stored as biggest_parent[1], so
     # turn it into Markdown.
-    print html2text.html2text(unicode(biggest_parent[1]))
+    print html2text.html2text(unicode(biggest_parent[1])).encode('utf-8')
 
 if __name__ == '__main__':
     main()
