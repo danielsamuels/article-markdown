@@ -42,7 +42,7 @@ def main():
     # turn it into Markdown.
 
     print "---"
-    print u"title: {}".format(soup.title.string).encode('utf-8').strip()
+    print u"title: \"{}\"".format(soup.title.string).encode('utf-8').strip()
     print u"canonical: {}".format(url).encode('utf-8').strip()
     print "---"
     print
